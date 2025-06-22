@@ -1,0 +1,7 @@
+{
+  "name": "vision-front",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular-standalone"
+}
