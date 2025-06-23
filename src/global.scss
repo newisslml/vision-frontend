@@ -35,3 +35,12 @@
 /* @import "@ionic/angular/css/palettes/dark.always.css"; */
 /* @import "@ionic/angular/css/palettes/dark.class.css"; */
 @import '@ionic/angular/css/palettes/dark.system.css';
+
+:root {
+    --ion-font-family: 'Michroma', sans-serif;
+}
+
+ion-content {
+  --background: linear-gradient(135deg, #121212, #363232);
+  --color: #e0e0e0;
+}

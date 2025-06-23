@@ -1,0 +1,28 @@
+<ion-content class="ion-padding login-content">
+  <div class="titulo-vision">Plague</div>
+  <form>
+    <ion-item class="custom-item">
+      <ion-label position="floating">Correo electrónico</ion-label>
+      <ion-input type="email" formControlName="email" required></ion-input>
+    </ion-item>
+
+    <ion-item class="custom-item">
+      <ion-label position="floating">Contraseña</ion-label>
+      <ion-input type="password" formControlName="password" required></ion-input>
+    </ion-item>
+
+    <ion-item lines="none" class="recordar-item">
+      <ion-checkbox slot="start" formControlName="remember"></ion-checkbox>
+      <ion-label>Recordar contraseña</ion-label>
+    </ion-item>
+
+    <ion-button expand="block" type="submit" class="boton-login">Iniciar Sesión</ion-button>
+  </form>
+
+  <div class="ion-text-center enlace-registro">
+    <ion-text>
+      ¿No tienes cuenta?
+      <a>Regístrate aquí</a>
+    </ion-text>
+  </div>
+</ion-content>
