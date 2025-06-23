@@ -30,6 +30,7 @@ log.txt
 /out-tsc
 /bazel-out
 /android/*
+/android
 
 # Node
 /node_modules
