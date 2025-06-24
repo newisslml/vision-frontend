@@ -4,15 +4,15 @@ import { addIcons } from 'ionicons';
 import { triangle, ellipse, square } from 'ionicons/icons';
 
 @Component({
-  selector: 'app-login',
-  templateUrl: 'login.page.html',
-  styleUrls: ['login.page.scss'],
-  imports: [IonText, IonInput, IonItem, IonButton, IonContent, IonLabel, IonCheckbox],
+    selector: 'app-login',
+    templateUrl: 'login.page.html',
+    styleUrls: ['login.page.scss'],
+    imports: [IonText, IonInput, IonItem, IonButton, IonContent, IonLabel, IonCheckbox],
 })
 export class LoginPage {
-  public environmentInjector = inject(EnvironmentInjector);
+    public environmentInjector = inject(EnvironmentInjector);
 
-  constructor() {
-    addIcons({ triangle, ellipse, square });
-  }
+    constructor() {
+        addIcons({ triangle, ellipse, square });
+    }
 }

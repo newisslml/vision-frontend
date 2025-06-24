@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 
 <head>
   <meta charset="utf-8" />
-  <title>Registro de Usuario</title>
+  <title>Ionic App</title>
 
   <base href="/" />
 
@@ -19,154 +19,10 @@
   <meta name="mobile-web-app-capable" content="yes" />
   <meta name="apple-mobile-web-app-status-bar-style" content="black" />
   <link href="https://fonts.googleapis.com/css2?family=Michroma&display=swap" rel="stylesheet">
-  
-  <!-- Ionicons -->
-  <link href="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.css" rel="stylesheet">
-  
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      background: #f4f4f4;
-      margin: 0;
-      padding: 20px;
-    }
-    
-    .container {
-      max-width: 500px;
-      margin: 0 auto;
-      background: white;
-      padding: 20px;
-      border-radius: 10px;
-      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-    }
-    
-    h1 {
-      text-align: center;
-      color: #3880ff;
-      font-family: 'Michroma', sans-serif;
-    }
-    
-    .form-group {
-      margin-bottom: 15px;
-    }
-    
-    label {
-      display: block;
-      margin-bottom: 5px;
-      font-weight: bold;
-    }
-    
-    input {
-      width: 100%;
-      padding: 10px;
-      border: 1px solid #ddd;
-      border-radius: 5px;
-      box-sizing: border-box;
-    }
-    
-    button {
-      background: #3880ff;
-      color: white;
-      border: none;
-      padding: 12px;
-      width: 100%;
-      border-radius: 5px;
-      font-size: 16px;
-      cursor: pointer;
-      margin-top: 10px;
-    }
-    
-    button:hover {
-      background: #3171e0;
-    }
-    
-    .password-container {
-      position: relative;
-    }
-    
-    .toggle-password {
-      position: absolute;
-      right: 10px;
-      top: 35px;
-      cursor: pointer;
-    }
-  </style>
 </head>
 
 <body>
-  <div class="container">
-    <h1>Registro de Usuario</h1>
-    
-    <form id="registerForm">
-      <div class="form-group">
-        <label for="nombre">Nombre completo</label>
-        <input type="text" id="nombre" name="nombre" required placeholder="Ej: Juan Pérez">
-      </div>
-      
-      <div class="form-group">
-        <label for="usuario">Nombre de usuario</label>
-        <input type="text" id="usuario" name="usuario" required placeholder="Ej: juan123">
-      </div>
-      
-      <div class="form-group">
-        <label for="correo">Correo electrónico</label>
-        <input type="email" id="correo" name="correo" required placeholder="Ej: usuario@example.com">
-      </div>
-      
-      <div class="form-group">
-        <label for="contrasena">Contraseña</label>
-        <div class="password-container">
-          <input type="password" id="contrasena" name="contrasena" required placeholder="Mínimo 8 caracteres">
-          <i class="toggle-password ion-eye" onclick="togglePassword()"></i>
-        </div>
-      </div>
-      
-      <button type="submit">Registrarse</button>
-    </form>
-  </div>
-
-  <script>
-    function togglePassword() {
-      const passwordInput = document.getElementById('contrasena');
-      const icon = document.querySelector('.toggle-password');
-      
-      if (passwordInput.type === 'password') {
-        passwordInput.type = 'text';
-        icon.classList.remove('ion-eye');
-        icon.classList.add('ion-eye-off');
-      } else {
-        passwordInput.type = 'password';
-        icon.classList.remove('ion-eye-off');
-        icon.classList.add('ion-eye');
-      }
-    }
-    
-    document.getElementById('registerForm').addEventListener('submit', function(e) {
-      e.preventDefault();
-      
-      // Validación básica
-      const nombre = document.getElementById('nombre').value;
-      const usuario = document.getElementById('usuario').value;
-      const correo = document.getElementById('correo').value;
-      const contrasena = document.getElementById('contrasena').value;
-      
-      if (!nombre || !usuario || !correo || !contrasena) {
-        alert('Por favor complete todos los campos');
-        return;
-      }
-      
-      if (contrasena.length < 8) {
-        alert('La contraseña debe tener al menos 8 caracteres');
-        return;
-      }
-      
-      // Aquí iría la lógica para enviar los datos al servidor
-      alert('Registro exitoso! (esto es una simulación)');
-      
-      // Limpiar el formulario
-      this.reset();
-    });
-  </script>
+  <app-root></app-root>
 </body>
 
 </html>

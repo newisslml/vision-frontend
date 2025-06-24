@@ -1,4 +1,4 @@
-.login-content {
+.register-content {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -10,6 +10,17 @@
         margin-bottom: 1rem;
         border-radius: 8px;
         box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+        --background: black; // fondo oscuro para el input
+        --color: #fff; // color de texto blanco
+
+        ion-label {
+            color: #bbb; // cambia el color del texto flotante
+        }
+
+        ion-input {
+            color: #fff; // texto ingresado
+            --placeholder-color: #888; // opcional, para el placeholder
+        }
     }
 
     .recordar-item {
@@ -17,9 +28,20 @@
         margin-bottom: 1.2rem;
         font-size: 0.9rem;
         --ion-color-primary: #007BFF;
+        --background: #000; // fondo negro
+        --color: #fff; // texto blanco
+
+        ion-label {
+            color: #fff;
+        }
+
+        ion-checkbox {
+            --background: #222;
+            --border-color: #fff;
+        }
     }
 
-    .boton-login {
+    .boton-register {
         --background: #007BFF;
         --color: #fff;
         border-radius: 6px;
@@ -50,5 +72,11 @@
         color: #e0d5d5;
         letter-spacing: 1.5px;
         text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+
+    .input-bg {
+        --background: transparent;
+        --color: #e0e0e0;
+        color: #e0e0e0 !important;
     }
 }
