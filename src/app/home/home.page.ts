@@ -1,18 +1,18 @@
-import { Component, EnvironmentInjector, inject } from '@angular/core';
-import { IonContent, IonButton, IonItem, IonInput, IonText, IonLabel, IonCheckbox } from '@ionic/angular/standalone';
-import { addIcons } from 'ionicons';
-import { triangle, ellipse, square } from 'ionicons/icons';
+import { Component } from '@angular/core';
+import { IonButton, IonCol, IonContent, IonGrid, IonHeader, IonRow, IonTitle, IonToolbar, NavController } from '@ionic/angular/standalone';
 
 @Component({
-    selector: 'app-login',
-    templateUrl: 'login.page.html',
-    styleUrls: ['login.page.scss'],
-    imports: [IonText, IonInput, IonItem, IonButton, IonContent, IonLabel, IonCheckbox],
+    selector: 'app-home',
+    templateUrl: 'home.page.html',
+    styleUrls: ['home.page.scss'],
+    imports: [IonHeader, IonToolbar, IonTitle, IonContent, IonButton, IonGrid, IonRow, IonCol]
 })
-export class LoginPage {
-    public environmentInjector = inject(EnvironmentInjector);
+export class HomePage {
+    constructor(private navCtrl: NavController) { }
 
-    constructor() {
-        addIcons({ triangle, ellipse, square });
+    irAOpcion(opcion: string) {
+        console.log('Navegar a:', opcion);
+        // Aquí podrías redirigir según la opción
+        // this.navCtrl.navigateForward(`/ruta-${opcion}`);
     }
 }
