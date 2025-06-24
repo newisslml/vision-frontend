@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { IonButton, IonCol, IonContent, IonGrid, IonHeader, IonRow, IonTitle, IonToolbar, NavController } from '@ionic/angular/standalone';
-
+import { AlertController } from '@ionic/angular';
 @Component({
     selector: 'app-home',
     templateUrl: 'home.page.html',
@@ -8,11 +8,24 @@ import { IonButton, IonCol, IonContent, IonGrid, IonHeader, IonRow, IonTitle, Io
     imports: [IonHeader, IonToolbar, IonTitle, IonContent, IonButton, IonGrid, IonRow, IonCol]
 })
 export class HomePage {
-    constructor(private navCtrl: NavController) { }
+    constructor(private navCtrl: NavController, private alertController: AlertController) {
 
-    irAOpcion(opcion: string) {
-        console.log('Navegar a:', opcion);
-        // Aquí podrías redirigir según la opción
-        // this.navCtrl.navigateForward(`/ruta-${opcion}`);
+    }
+
+    irACamaras() {
+        this.navCtrl.navigateForward("/camaras");
+    }
+
+
+    async mostrarAlerta() {
+        const alerta = await this.alertController.create({
+            header: '¡Ops...!',
+            subHeader: 'En proceso',
+            message: 'Trabajando para habilitar esta opcion.',
+            buttons: ['OK']
+        });
+
+        await alerta.present();
     }
 }
+
