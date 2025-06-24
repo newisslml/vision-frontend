@@ -12,7 +12,7 @@ export class CamarasPage {
     constructor(private navCtrl: NavController) { }
 
     listadoCamaras = [
-        { nombre: 'Cámara 1', url: 'http://lalalalalala' },
+        { nombre: 'Cámara 1', url: 'http://192.168.1.8:8080/video' },
         { nombre: 'Cámara 2', url: 'http://lalalalalala' },
         { nombre: 'Cámara 3', url: 'http://lalalalalala' }
     ];
