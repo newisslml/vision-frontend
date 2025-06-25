@@ -4,6 +4,12 @@
     justify-content: center;
     height: 100%;
 
+    .form-container {
+        max-width: 800px; /* o el valor que prefieras */
+         margin: 0 auto;
+         width: 100%;
+    }
+
     .custom-item {
         --border-color: #ccc;
         --highlight-color: #007BFF;
@@ -42,7 +48,7 @@
     }
 
     .boton-login {
-        --background: #007BFF;
+        --background: #227003;
         --color: #fff;
         border-radius: 6px;
         box-shadow: 0 4px 12px rgba(0, 123, 255, 0.3);
@@ -56,7 +62,7 @@
         font-size: 0.9rem;
 
         a {
-            color: #007BFF;
+            color: #2bff00;
             text-decoration: underline;
             cursor: pointer;
         }
@@ -68,7 +74,7 @@
         font-size: 2.4rem;
         font-weight: 700;
         margin-bottom: 2rem;
-        margin-top: 2rem;
+        margin-top: 8rem;
         color: #e0d5d5;
         letter-spacing: 1.5px;
         text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);

@@ -2,5 +2,29 @@
   height: 80px;
   --padding-top: 0;
   --padding-bottom: 0;
-  font-size: 16px; // puedes ajustar el tamaño del texto si es necesario
+  font-size: 12px; // puedes ajustar el tamaño del texto si es necesario
+}
+
+.ion-padding ion-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.ion-padding ion-grid {
+  max-width: 600px;
+  width: 100%;
+}
+
+.titulo-vision {
+        font-family: 'Michroma', sans-serif;
+        text-align: center;
+        font-size: 2.4rem;
+        font-weight: 700;
+        margin-bottom: 2rem;
+        margin-top: 8rem;
+        color: #e0d5d5;
+        letter-spacing: 1.5px;
+        text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
